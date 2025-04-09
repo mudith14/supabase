@@ -83,6 +83,38 @@ MCP compatible tools can connect to Supabase using the [Supabase MCP server](htt
 
 1. Restart Claude code to apply the new configuration.
 
+### Enabling MCP in VSCode
+
+VSCode supports MCP out of the box in its latest release. Follow these steps to enable MCP in VSCode:
+
+Install the Latest Version of VSCode:
+
+Ensure you have the latest version of VSCode installed. You can download it from the official VSCode website.
+Configure MCP in VSCode:
+
+Create a .vscode/mcp.json file in your workspace:
+
+                {
+                  "servers": [
+                        {
+                          "name": "Supabase MCP Server",
+                          "url": "http://localhost:3000"
+                        }
+                              ]
+                }
+
+Alternatively, you can add the MCP server configuration through the VSCode Command Palette:
+Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS).
+Type MCP: Add Server and follow the prompts to add your MCP server.
+Verify MCP Configuration:
+
+Ensure that the MCP server is running and accessible.
+Use the VSCode Command Palette to interact with the MCP server and verify that it is working correctly.
+
+For more details, refer to the (https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
+
+
+
 ### Next steps
 
 Your AI tool is now connected to Supabase using MCP. Try asking your AI assistant to create a new project, create a table, or fetch project config.
